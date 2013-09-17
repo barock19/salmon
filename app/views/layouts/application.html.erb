@@ -25,12 +25,13 @@
       <div class="masthead">
         <h3 class="text-muted">Project name</h3>
         <ul class="nav nav-justified">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Downloads</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><%= link_to "Home", root_path%></li>
+          <li><%= link_to "Anatomy", salmon_anatomy_path%></li>
+          <li><%= link_to "Scientific", salmon_scientific_path%></li>
+          <li><%= link_to "Habitat", salmon_habitat_path%></li>
+          <li><%= link_to "Behaviour", salmon_behaviour_path%></li>
+          <li><%= link_to "Diet", salmon_diet_path%></li>
+          <li><%= link_to "Reproduction", salmon_reproduction_path%></li>
         </ul>
       </div>
       <div class="component"> 
