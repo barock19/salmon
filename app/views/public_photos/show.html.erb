@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @public_photo.image %>
+</p>
+
+<p>
+  <strong>Caption:</strong>
+  <%= @public_photo.caption %>
+</p>
+
+<%= link_to 'Edit', edit_public_photo_path(@public_photo) %> |
+<%= link_to 'Back', public_photos_path %>

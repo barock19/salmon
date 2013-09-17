@@ -1,0 +1,13 @@
+<h1>Gallery</h1>
+<div class="row">
+  <div class="col-sm-6 col-md-3">
+    <% @public_photos.each do |public_photo| %>
+      <a class="thumbnail">
+        <%= image_tag public_photo.image.url %>
+        <br>
+        <%=public_photo.caption%>
+      </a>  
+    <% end %>   
+  </div>
+</div>
+<%= link_to 'New Public photo', new_public_photo_path %>

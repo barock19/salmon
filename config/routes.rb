@@ -7,4 +7,5 @@ Salmon::Application.routes.draw do
   get "salmon/diet"
   get "salmon/reproduction"
   root :to => 'application#home'
+  resources :public_photos
 end
