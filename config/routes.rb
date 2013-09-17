@@ -1,4 +1,10 @@
 Salmon::Application.routes.draw do
+  resources :pages do
+    collection do
+      get :search
+    end
+  end
+
   get "salmon/anatomy"
   get "salmon/scientific"
   get "salmon/habitat"
