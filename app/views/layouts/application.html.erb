@@ -26,14 +26,12 @@
         <h3 class="text-muted">MonSalmon</h3>
         <ul class="nav nav-justified">
           <li><%= link_to "Home", root_path%></li>
-          <li><%= link_to "Anatomy", salmon_anatomy_path%></li>
-          <li><%= link_to "Scientific", salmon_scientific_path%></li>
-          <li><%= link_to "Habitat", salmon_habitat_path%></li>
-          <li><%= link_to "Behaviour", salmon_behaviour_path%></li>
-          <li><%= link_to "Diet", salmon_diet_path%></li>
-          <li><%= link_to "Reproduction", salmon_reproduction_path%></li>
-          <li><%= link_to "Photo", public_photos_path%></li>
-          <li><%= link_to "Search", search_pages_path%></li>          
+          
+          <% Page.all.each do |p| %>
+            <li><%= link_to p.title, p %></li>
+          <% end %>
+          <li><%= link_to "Photo",  public_photos_path %></li>
+          <li><%= link_to "Search",  page_path(:id => 1)%></li>          
         </ul>
       </div>
       <div class="component"> 
