@@ -24,7 +24,7 @@
     <div class="container">
 
       <div class="masthead">
-        <h1 class="text-muted text-center">MonSalmon</h1>
+        <h3 class="text-muted"><%= link_to "MonSalmon", root_path %></h3>
         <ul class="nav nav-justified">
           <li><%= link_to "Home", root_path%></li>
           
@@ -32,7 +32,7 @@
             <li><%= link_to p.title, p %></li>
           <% end %>
           <li><%= link_to "Photo",  public_photos_path %></li>
-          <li><%= link_to "Search",  page_path(:id => 1)%></li>          
+          <li><%= link_to "Search",  search_pages_path %></li>          
         </ul>
       </div>
       <div class="component"> 
@@ -42,7 +42,7 @@
 
       <!-- Site footer -->
       <div class="footer">
-        <p>&copy; Antimainstream Inc 2013 - <p></p></p>
+        <p>&copy; Antimainstream Inc 2013 - </p>
       </div>
 
     </div> <!-- /container -->
