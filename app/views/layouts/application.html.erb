@@ -24,7 +24,10 @@
     <div class="container">
 
       <div class="masthead">
-        <h3 class="text-muted"><%= link_to "MonSalmon", root_path %></h3>
+        <h3 class="text-muted">
+        <%= image_tag 'salmon.png' %>
+        <%= link_to "MonSalmon", root_path %></h3>
+        
         <ul class="nav nav-justified">          
           <% Page.all.each do |p| %>
             <li><%= link_to p.title, p %></li>
