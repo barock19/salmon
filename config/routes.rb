@@ -1,4 +1,6 @@
 Salmon::Application.routes.draw do
+  get "company/contact"
+  post "company/send_contact"
   resources :pages do
     collection do
       get :search

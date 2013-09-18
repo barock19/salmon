@@ -1,0 +1,14 @@
+<h1>Contact</h1>
+
+<p id="notice"><%= notice %></p>
+
+
+<%= form_tag company_send_contact_path do  %>
+  <p>Your email <%= text_field_tag :sender_email %></p>
+  
+  <p>Subject <%= text_field_tag :subject %></p>
+  
+  <p>Message <%= text_field_tag :message %></p>
+  
+  <p><%= submit_tag "Send" %></p>
+<% end %>
