@@ -15,6 +15,7 @@
   <head>
   <title>Salmon</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag :application %>
   <%= csrf_meta_tags %>
   </head>
 
@@ -23,7 +24,7 @@
     <div class="container">
 
       <div class="masthead">
-        <h3 class="text-muted">MonSalmon</h3>
+        <h1 class="text-muted text-center">MonSalmon</h1>
         <ul class="nav nav-justified">
           <li><%= link_to "Home", root_path%></li>
           <li><%= link_to "Anatomy", salmon_anatomy_path%></li>
@@ -52,7 +53,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-      <div class="github-fork-ribbon-wrapper right">
+      <div class="github-fork-ribbon-wrapper left">
         <div class="github-fork-ribbon">
             <a href="https://github.com/barock19/salmon">Fork me on GitHub</a>
         </div>
