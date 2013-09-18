@@ -22,7 +22,8 @@ class PagesController < ApplicationController
   end
 
   def search
-    @pages = Page.where("title like :q or body like :q", :q => params[:q])
+    @pages = params[:q] ?  Page.where("title like :q or body like :q", :q => "%#{ params[:q] }%") : []
+
     # render :action => :index
   end
 

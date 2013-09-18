@@ -1,9 +1,9 @@
+<h1>Search <%=params[:q] ? '"'+params[:q]+'"' : ''%> </h1>
+<hr>
 <form actiion="/pages/search" method="get">
   <input type="type" name="q" value="<%=params[:q]%>">
   <button>Search</button>
 </form>
-
-<h1>Search <%=params[:q] ? '"'+params[:q]+'"' : ''%> </h1>
 <% @pages.each do |page| %>
   <div class="item">
   <h3><%= link_to page.title, page %></h3>
