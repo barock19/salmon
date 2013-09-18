@@ -32,7 +32,8 @@
             <li><%= link_to p.title, p %></li>
           <% end %>
           <li><%= link_to "Photo",  public_photos_path %></li>
-          <li><%= link_to "Search",  search_pages_path %></li>          
+          <li><%= link_to "Search",  search_pages_path %></li> 
+          <li> <a href="/company/contact">Contact</a> </li>
         </ul>
       </div>
       <div class="component"> 
@@ -42,7 +43,20 @@
 
       <!-- Site footer -->
       <div class="footer">
-        <p>&copy; Antimainstream Inc 2013 - </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <p>&copy; Antimainstream Inc 2013 </p>
+          </div>
+          <div class="col-lg-6">
+            <p class="text-right">
+            <a href="/">Home</a> | <a href="/pages/7">About us</a> | <a href="/company/contact">Contact</a>  </p>
+
+          </div>
+
+        </div>
+
+        
+
       </div>
 
     </div> <!-- /container -->
