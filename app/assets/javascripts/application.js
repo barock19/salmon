@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require ckeditor-jquery
+//= require jquery.validate
+//= require salmon
 //= require_self
 //= require_tree .
+
 

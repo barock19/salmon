@@ -3,7 +3,7 @@
 <p id="notice"><%= notice %></p>
 
 
-<%= form_tag company_send_contact_path do  %>
+<%= form_tag company_send_contact_path, :class => 'contact' do  %>
   <p>Your email <%= text_field_tag :sender_email %></p>
   
   <p>Subject <%= text_field_tag :subject %></p>
@@ -12,3 +12,15 @@
   
   <p><%= submit_tag "Send" %></p>
 <% end %>
+
+<script type='text/javascript'>
+$(".contact").validate({
+  rules: {
+    // compound rule
+    sender_email: {
+      required: true,
+      email: true
+    }
+  }
+});
+</script>
